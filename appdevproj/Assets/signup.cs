@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using AndroidX.AppCompat.App;
+using DevConnect.Common;
 using Firebase.Auth;
 using Firebase.Firestore;
 using Java.Util;
@@ -32,13 +33,21 @@ namespace appdevproj.Assets
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Signup);
             // Create your application here
+            auth = FirebaseRepository.getFirebaseAuth();
+            db = FirebaseRepository.GetFirebaseFirestore();
+
             edittextFullname = FindViewById<EditText>(Resource.Id.edittextFullname);
             edittextEmail = FindViewById<EditText>(Resource.Id.edittextEmail);
             edittextPassword = FindViewById<EditText>(Resource.Id.edittextPassword);
             edittextCPassword = FindViewById<EditText>(Resource.Id.edittextCPassword);
             sign_up = FindViewById<Button>(Resource.Id.sign_up);
 
-            sign_up.Click += Sign_up_Click; 
+            sign_up.Click += Sign_up_Click;
+
+            edittextFullname.TextChanged += delegate { ValidateField(edittextFullname); };
+            edittextEmail.TextChanged += delegate { ValidateField(edittextFullname); };
+            edittextPassword.TextChanged += delegate { ValidateField(edittextFullname); };
+            edittextCPassword.TextChanged += delegate { ValidateField(edittextFullname); };
 
             TextView Clickview = FindViewById<TextView>(Resource.Id.Clickview);
             Clickview.Click += delegate
@@ -93,7 +102,7 @@ namespace appdevproj.Assets
             if (task.IsSuccessful)
             {
                 HashMap userMap = new HashMap();
-                userMap.Put("fullname", edittextFullname?.Text);
+                userMap.Put("fullname", edittextFullname.Text);
 
                 DocumentReference userRef = db.Collection("users").Document(auth.CurrentUser.Uid);
                 userRef.Set(userMap);
@@ -107,5 +116,17 @@ namespace appdevproj.Assets
                 Toast.MakeText(this, task.Exception.Message, ToastLength.Short).Show();
             }
         }
-    } 
+        private void ValidateField(EditText field)
+        {
+
+
+            if (string.IsNullOrEmpty(field.Text))
+            {
+                field.Error = "Must not be empty.";
+                sign_up.Clickable = false;
+                return;
+
+            }
+        }
     }
+}
