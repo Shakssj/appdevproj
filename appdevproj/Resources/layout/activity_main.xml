@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181A20">
+
+    
+     
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo2"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/cine"
+        />
+
+     <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mbooking_hello_text_view"
+        android:layout_marginLeft="75dp"
+       android:layout_marginTop="600dp"
+        android:text="Dont have an Acount?" 
+        android:textColor="#ffff"
+        android:textSize="17sp"
+        android:textAlignment="center" />
+    
+        
+    
+
+    <TextView
+        android:id="@+id/Clickview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mbooking_hello_text_view"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="600dp"
+        android:clickable="true"
+        android:text="Click Here" 
+        android:textColor="#CB291C"
+        android:textSize="17sp"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:background="#ffff"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/sign_in_button2"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="400dp"
+        android:text="Sign in with Google"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1F222A"
+        />
+   
+     <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:background="#ffff"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/sign_in_button"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="480dp"
+        android:text="Sign in with Password"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#CB291C"
+        />
+
+</RelativeLayout>

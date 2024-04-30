@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181A20">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Search"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/homeBTN"
+       android:layout_width="70dp"
+       android:layout_height="70dp"
+       android:scaleType="fitCenter"
+       android:src="@drawable/homew"
+       android:backgroundTint="#181A20"
+       android:layout_marginTop="740dp"
+       android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:id="@+id/movieBTN"
+       android:layout_width="70dp"
+       android:layout_height="70dp"
+       android:scaleType="fitCenter"
+       android:src="@drawable/movie"
+       android:backgroundTint="#181A20"
+       android:layout_marginTop="740dp"
+       android:layout_marginLeft="90dp"/>
+    <ImageButton
+        android:id="@+id/ticketBTN"
+       android:layout_width="70dp"
+       android:layout_height="70dp"
+       android:scaleType="fitCenter"
+       android:src="@drawable/tickets"
+       android:backgroundTint="#181A20"
+       android:layout_marginTop="740dp"
+        android:layout_marginLeft="170dp"/>
+    <ImageButton
+        android:id="@+id/srchBTN"
+       android:layout_width="70dp"
+       android:layout_height="70dp"
+       android:scaleType="fitCenter"
+       android:src="@drawable/searcho"
+       android:backgroundTint="#181A20"
+       android:layout_marginTop="740dp"
+       android:layout_marginLeft="250dp"/>
+    <ImageButton
+        android:id="@+id/accBTN"
+       android:layout_width="70dp"
+       android:layout_height="70dp"
+       android:scaleType="fitCenter"
+       android:src="@drawable/acc"
+       android:backgroundTint="#181A20"
+       android:layout_marginTop="740dp"
+        android:layout_marginLeft="330dp"/>
+</RelativeLayout>
