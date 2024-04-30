@@ -26,10 +26,10 @@ namespace DevConnect.Common
             if (app == null)
             {
                 var options = new FirebaseOptions.Builder()
-                   .SetProjectId("devconnect-4f483")
-                   .SetApplicationId("1:1092250463743:android:0904b463244fb394754bca")
-                   .SetApiKey("AIzaSyDHJDgbvfKzVg7Psh8sBg0WsSuYiWIz3RQ")
-                   .SetStorageBucket("devconnect-4f483.appspot.com")
+                   .SetProjectId("nath-ddde7")
+                   .SetApplicationId("1:217266368476:android:54d7dbb925ffd3d7b56919")
+                   .SetApiKey("AIzaSyBOsYcm2nSQ3Y8ayqb9VWC3_1I6HMiwBEo")
+                   .SetStorageBucket("nath-ddde7.appspot.com")
                    .Build();
 
                 app = FirebaseApp.InitializeApp(Application.Context, options);
@@ -47,10 +47,10 @@ namespace DevConnect.Common
             if (app == null)
             {
                 var options = new FirebaseOptions.Builder()
-                   .SetProjectId("devconnect-4f483")
-                   .SetApplicationId("1:1092250463743:android:0904b463244fb394754bca")
-                   .SetApiKey("AIzaSyDHJDgbvfKzVg7Psh8sBg0WsSuYiWIz3RQ")
-                   .SetStorageBucket("devconnect-4f483.appspot.com")
+                   .SetProjectId("nath-ddde7")
+                   .SetApplicationId("1:217266368476:android:54d7dbb925ffd3d7b56919")
+                   .SetApiKey("AIzaSyBOsYcm2nSQ3Y8ayqb9VWC3_1I6HMiwBEo")
+                   .SetStorageBucket("nath-ddde7.appspot.com")
                    .Build();
 
                 app = FirebaseApp.InitializeApp(Application.Context, options);

@@ -165,7 +165,7 @@
 
      
     <EditText
-        android:id="@+id/edittextPassword"
+        android:id="@+id/edittextCPassword"
         android:textColorHint="#6A6B6D" 
         android:layout_width="380dp"
         android:layout_height="50dp"
@@ -183,7 +183,7 @@
         />
 
     <ImageView
-        android:id="@+id/lock"
+        android:id="@+id/lock1"
         android:layout_width="25dp"
         android:layout_height="30dp"
         android:layout_marginLeft="350dp"
@@ -235,10 +235,10 @@
         />
 
     <Button
+         android:id="@+id/sign_up"
         android:textAllCaps="false"
         style="@style/RoundedButton"
         android:layout_marginLeft="30dp"
-        android:id="@+id/sign_up"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginTop="750dp"
