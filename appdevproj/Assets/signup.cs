@@ -45,9 +45,9 @@ namespace appdevproj.Assets
             sign_up.Click += Sign_up_Click;
 
             edittextFullname.TextChanged += delegate { ValidateField(edittextFullname); };
-            edittextEmail.TextChanged += delegate { ValidateField(edittextFullname); };
-            edittextPassword.TextChanged += delegate { ValidateField(edittextFullname); };
-            edittextCPassword.TextChanged += delegate { ValidateField(edittextFullname); };
+            edittextEmail.TextChanged += delegate { ValidateField(edittextEmail); };
+            edittextPassword.TextChanged += delegate { ValidateField(edittextPassword); };
+            edittextCPassword.TextChanged += delegate { ValidateField(edittextCPassword); };
 
             TextView Clickview = FindViewById<TextView>(Resource.Id.Clickview);
             Clickview.Click += delegate

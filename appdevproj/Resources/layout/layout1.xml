@@ -71,6 +71,7 @@
         android:textAlignment="center" />
     
     <EditText
+        android:id="@+id/edittextemailLog"
         android:textColorHint="#6A6B6D"
         android:layout_width="380dp"
         android:layout_height="50dp"
@@ -92,6 +93,7 @@
         android:src="@drawable/email"/>
 
     <EditText
+        android:id="@+id/edittextpassLog"
         android:textColorHint="#6A6B6D"
         android:layout_width="380dp"
         android:layout_height="50dp"
