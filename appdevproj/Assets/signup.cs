@@ -52,7 +52,7 @@ namespace appdevproj.Assets
             TextView Clickview = FindViewById<TextView>(Resource.Id.Clickview);
             Clickview.Click += delegate
             {
-                StartActivity(typeof(signup));
+                StartActivity(typeof(Activity1));
 
             };
 
@@ -60,7 +60,7 @@ namespace appdevproj.Assets
             back.Click += delegate
             {
 
-                Finish();
+                StartActivity(typeof(Activity1));
 
             };
         }

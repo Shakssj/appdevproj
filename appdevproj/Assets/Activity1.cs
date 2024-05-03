@@ -100,6 +100,7 @@ namespace appdevproj.Assets
             auth.SignInWithEmailAndPassword(email, pass)
                               .AddOnCompleteListener(this, this);
 
+
         }
         public void SignInSucces()
         {
