@@ -22,6 +22,8 @@ namespace appdevproj.Assets
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.account);
             // Create your application here
+
+
             ImageButton homeBTN = FindViewById<ImageButton>(Resource.Id.homeBTN);
             homeBTN.Click += delegate
             {

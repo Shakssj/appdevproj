@@ -51,13 +51,7 @@ namespace appdevproj.Assets
             emailt.TextChanged += delegate { ValidateField(emailt); };
 
 
-            Button sign_in = FindViewById<Button>(Resource.Id.sign_in);
-            sign_in.Click += delegate
-            {
-                StartActivity(typeof(homepageact));
-
-            };
-
+      
             ImageButton back = FindViewById<ImageButton>(Resource.Id.back);
             back.Click += delegate
             {
@@ -110,6 +104,7 @@ namespace appdevproj.Assets
         public void SignInSucces()
         {
             Intent Home = new Intent(this, typeof(homepageact));
+            Home.AddFlags(ActivityFlags.ClearTop | ActivityFlags.NewTask);
             StartActivity(Home);
             Finish();
         }
