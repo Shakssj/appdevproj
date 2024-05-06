@@ -27,7 +27,7 @@ namespace appdevproj.Assets
 
             nextButton.Click += delegate
             {
-                int imageResource = Intent.GetIntExtra("imageResource", 0); // 0 is default value
+                int imageUrl = Intent.GetIntExtra("imageUrl", 0); // 0 is default value
                 string title = Intent.GetStringExtra("title");
                 string duration = Intent.GetStringExtra("duration");
                 string director = Intent.GetStringExtra("director");
@@ -35,7 +35,7 @@ namespace appdevproj.Assets
 
                 // Navigate to layout3 and pass data
                 var intent = new Intent(this, typeof(reviewSummary));
-                intent.PutExtra("imageResource", imageResource);
+                intent.PutExtra("imageUrl", imageUrl);
                 intent.PutExtra("title", title);
                 intent.PutExtra("duration", duration);
                 intent.PutExtra("director", director);

@@ -23,14 +23,14 @@ namespace appdevproj.Assets
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.reviewsumarry);
 
-            int imageResource = Intent.GetIntExtra("imageResource", 0); // 0 is default value
+            int imageUrl = Intent.GetIntExtra("imageUrl", 0); // 0 is default value
             string title = Intent.GetStringExtra("title");
             string duration = Intent.GetStringExtra("duration");
             string director = Intent.GetStringExtra("director");
             string genre = Intent.GetStringExtra("genre");
 
             ImageView imageView = FindViewById<ImageView>(Resource.Id.imgev1); // Assuming the ImageView's ID is "imageView"
-            imageView.SetImageResource(imageResource);
+            imageView.SetImageResource(imageUrl);
 
             TextView durationTextView = FindViewById<TextView>(Resource.Id.durationText);
             durationTextView.Text = duration;

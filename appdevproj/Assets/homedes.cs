@@ -28,19 +28,6 @@ namespace appdevproj.Assets
             SetContentView(Resource.Layout.Homedes);
             // Create your application here
 
-            function();
-
-            ImageButton back = FindViewById<ImageButton>(Resource.Id.back);
-            back.Click += delegate
-            {
-                StartActivity(typeof(movie));
-
-            };
-            nextButton = FindViewById<Button>(Resource.Id.sign_in_button2);
-
-        }
-        public void function()
-        {
             int imageUrl = Intent.GetIntExtra("ImageUrl", 0);
             string title = Intent.GetStringExtra("Title");
             string duration = Intent.GetStringExtra("Duration");
@@ -61,20 +48,19 @@ namespace appdevproj.Assets
             directorText.Text = director;
             genreText.Text = genre;
             sypnosisText.Text = sypnosis;
-        }
-        public void function2()
-        {
+
+            ImageButton back = FindViewById<ImageButton>(Resource.Id.back);
+            back.Click += delegate
+            {
+                StartActivity(typeof(movie));
+
+            };
+            nextButton = FindViewById<Button>(Resource.Id.sign_in_button2);
             nextButton.Click += delegate
             {
-                int imageResource = Resource.Id.imgev1;
-                string title = titleTextView.Text;
-                string duration = durationText.Text;
-                string director = directorTextView.Text;
-                string genre = genreTextView.Text;
 
-                
                 var intent = new Intent(this, typeof(dateTime));
-                intent.PutExtra("imageResource",imageResource);
+                intent.PutExtra("imageUrl", imageUrl);
                 intent.PutExtra("title", title);
                 intent.PutExtra("duration", duration);
                 intent.PutExtra("director", director);
@@ -82,5 +68,7 @@ namespace appdevproj.Assets
                 StartActivity(intent);
             };
         }
+       
+        
     }
 }
