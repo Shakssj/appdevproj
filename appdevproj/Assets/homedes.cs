@@ -15,7 +15,10 @@ namespace appdevproj.Assets
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
     public class homedes : AppCompatActivity
     {
-       
+        ImageView imageView;
+        TextView titleTextView, directorTextView, genreTextView, durationText;
+        Button nextButton;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -25,7 +28,20 @@ namespace appdevproj.Assets
             SetContentView(Resource.Layout.Homedes);
             // Create your application here
 
-            int imageUrl = Intent.GetIntExtra("ImageUrl",0);
+            function();
+
+            ImageButton back = FindViewById<ImageButton>(Resource.Id.back);
+            back.Click += delegate
+            {
+                StartActivity(typeof(movie));
+
+            };
+            nextButton = FindViewById<Button>(Resource.Id.sign_in_button2);
+
+        }
+        public void function()
+        {
+            int imageUrl = Intent.GetIntExtra("ImageUrl", 0);
             string title = Intent.GetStringExtra("Title");
             string duration = Intent.GetStringExtra("Duration");
             string director = Intent.GetStringExtra("Director");
@@ -45,16 +61,26 @@ namespace appdevproj.Assets
             directorText.Text = director;
             genreText.Text = genre;
             sypnosisText.Text = sypnosis;
-
-            ImageButton back = FindViewById<ImageButton>(Resource.Id.back);
-            back.Click += delegate
-            {
-                StartActivity(typeof(movie));
-
-            };
-
-
         }
-      
+        public void function2()
+        {
+            nextButton.Click += delegate
+            {
+                int imageResource = Resource.Id.imgev1;
+                string title = titleTextView.Text;
+                string duration = durationText.Text;
+                string director = directorTextView.Text;
+                string genre = genreTextView.Text;
+
+                
+                var intent = new Intent(this, typeof(dateTime));
+                intent.PutExtra("imageResource",imageResource);
+                intent.PutExtra("title", title);
+                intent.PutExtra("duration", duration);
+                intent.PutExtra("director", director);
+                intent.PutExtra("genre", genre);
+                StartActivity(intent);
+            };
+        }
     }
 }

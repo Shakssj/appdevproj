@@ -62,9 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\acc.cs" />
     <Compile Include="Assets\Activity1.cs" />
+    <Compile Include="Assets\dateTime.cs" />
     <Compile Include="Assets\homedes.cs" />
     <Compile Include="Assets\homepageact.cs" />
     <Compile Include="Assets\movie.cs" />
+    <Compile Include="Assets\reviewSummary.cs" />
     <Compile Include="Assets\search.cs" />
     <Compile Include="Assets\signup.cs" />
     <Compile Include="Assets\ticket.cs" />
