@@ -4,6 +4,10 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using DevConnect.Common;
+using Firebase.Auth;
+using Firebase.Firestore;
+using Java.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +19,11 @@ namespace appdevproj.Assets
     public class reviewSummary : Activity
     {
 
+        Button book;
+
+        FirebaseAuth auth;
+        FirebaseFirestore db;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
 
@@ -22,6 +31,9 @@ namespace appdevproj.Assets
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.reviewsumarry);
+
+            auth = FirebaseRepository.getFirebaseAuth();
+            db = FirebaseRepository.GetFirebaseFirestore();
 
             int imageUrl = Intent.GetIntExtra("imageUrl", 0); // 0 is default value
             string title = Intent.GetStringExtra("title");
@@ -48,6 +60,32 @@ namespace appdevproj.Assets
             TextView textDate = FindViewById<TextView>(Resource.Id.textDate);
             textDate.Text = selectedDate;
 
+
+            book = FindViewById<Button>(Resource.Id.sign_in_button2);
+            book.Click += Book;
+
+        }
+        private void Book(object sender, EventArgs e)
+        {
+            int imageUrl = Intent.GetIntExtra("imageUrl", 0); // 0 is default value
+            string title = Intent.GetStringExtra("title");
+            string duration = Intent.GetStringExtra("duration");
+            string director = Intent.GetStringExtra("director");
+            string genre = Intent.GetStringExtra("genre");
+            string selectedDate = Intent.GetStringExtra("selectedDate");
+
+            HashMap movieData = new HashMap();
+            movieData.Put("imageUrl", imageUrl);
+            movieData.Put("title", title);
+            movieData.Put("duration", duration);
+            movieData.Put("director", director);
+            movieData.Put("genre", genre);
+            movieData.Put("selectedDate", selectedDate);
+
+            DocumentReference userRef = db.Collection("tickets").Document(auth.CurrentUser.Uid);
+            userRef.Set(movieData);
+
+            Toast.MakeText(this, "Successful Book", ToastLength.Short).Show();
         }
     }
 }
