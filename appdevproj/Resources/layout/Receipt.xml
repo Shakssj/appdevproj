@@ -15,7 +15,7 @@
         android:textSize="20dp"
     android:layout_centerHorizontal="true"/>
     <ImageButton
-        android:id="@+id/ext"
+        android:id="@+id/text"
          android:layout_width="65dp"
          android:layout_height="65dp"
         android:layout_marginTop="10dp"
@@ -46,40 +46,6 @@
         android:textSize="25dp"
     android:layout_centerHorizontal="true"/>
 
-    <TextView
-        android:id="@+id/duration"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="420dp"
-        android:textColor="@android:color/black"
-        android:text="120 min"
-        android:textAlignment="center"
-        android:textColor="#7d7c7a"
-        android:textSize="15dp"
-    android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
-        android:textColor="@android:color/black"
-        android:text="May 1 2024"
-        android:textAlignment="center"
-        android:textSize="15dp"
-        android:textColor="#7d7c7a"
-        android:layout_marginLeft="60dp"/>
-
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
-        android:textColor="@android:color/black"
-        android:text="15:00"
-        android:textSize="15dp"
-        android:textColor="#7d7c7a"
-        android:layout_marginLeft="240dp"/>
 
 </RelativeLayout>
 

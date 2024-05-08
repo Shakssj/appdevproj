@@ -82,8 +82,10 @@ namespace appdevproj.Assets
             movieData.Put("genre", genre);
             movieData.Put("selectedDate", selectedDate);
 
-            DocumentReference userRef = db.Collection("tickets").Document(auth.CurrentUser.Uid);
-            userRef.Set(movieData);
+            CollectionReference moviesCollectionRef = db.Collection("tickets").Document(auth.CurrentUser.Uid).Collection("movies");
+
+            DocumentReference movieDocRef = moviesCollectionRef.Document();
+            movieDocRef.Set(movieData);
 
             Toast.MakeText(this, "Successful Book", ToastLength.Short).Show();
         }
