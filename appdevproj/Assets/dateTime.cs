@@ -12,9 +12,10 @@ using System.Text;
 namespace appdevproj.Assets
 {
 
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = false)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class dateTime : Activity
     {
+        DatePicker datePicker;
         Button nextButton;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -23,10 +24,26 @@ namespace appdevproj.Assets
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Datetime);
 
+            datePicker = FindViewById<DatePicker>(Resource.Id.datePicker);
             nextButton = FindViewById<Button>(Resource.Id.sign_in_button2);
+            nextButton.Enabled = false;
 
-            nextButton.Click += delegate
+            datePicker.DateChanged += (sender, e) =>
             {
+                nextButton.Enabled = true;
+            };
+
+           
+
+            nextButton.Click += (sender, e) =>
+            {
+                int day = datePicker.DayOfMonth;
+                int month = datePicker.Month + 1; // Month starts from 0
+                int year = datePicker.Year;
+
+                string monthString = new DateTime(year, month, 1).ToString("MMMM");
+
+
                 int imageUrl = Intent.GetIntExtra("imageUrl", 0); // 0 is default value
                 string title = Intent.GetStringExtra("title");
                 string duration = Intent.GetStringExtra("duration");
@@ -40,6 +57,7 @@ namespace appdevproj.Assets
                 intent.PutExtra("duration", duration);
                 intent.PutExtra("director", director);
                 intent.PutExtra("genre", genre);
+                intent.PutExtra("selectedDate", $"{monthString}-{day}-{year}");
                 StartActivity(intent);
             };
 

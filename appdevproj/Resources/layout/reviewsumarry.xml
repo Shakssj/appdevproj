@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:background="#181A20">
 
+    
+
      <TextView
         android:id="@+id/moviedes"
         android:layout_width="200dp"
@@ -137,5 +139,43 @@
         android:textColor="#ffff"
         android:textSize="16sp"
         android:backgroundTint="#CB291C"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:textSize="20dp"
+        android:text="Date    : "
+        android:layout_marginLeft="60dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:textSize="20dp"
+        android:text="Time   : "
+        android:layout_marginLeft="60dp"
+        android:textColor="@android:color/white"/>
+
+      <TextView
+        android:id="@+id/textDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:textSize="16dp"
+        android:text="15;00"
+        android:layout_marginLeft="200dp"
+        android:textColor="@android:color/white"/>
 
 </RelativeLayout>

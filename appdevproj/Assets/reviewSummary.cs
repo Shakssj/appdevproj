@@ -28,6 +28,7 @@ namespace appdevproj.Assets
             string duration = Intent.GetStringExtra("duration");
             string director = Intent.GetStringExtra("director");
             string genre = Intent.GetStringExtra("genre");
+            string selectedDate = Intent.GetStringExtra("selectedDate");
 
             ImageView imageView = FindViewById<ImageView>(Resource.Id.imgev1); // Assuming the ImageView's ID is "imageView"
             imageView.SetImageResource(imageUrl);
@@ -43,6 +44,9 @@ namespace appdevproj.Assets
 
             TextView genreTextView = FindViewById<TextView>(Resource.Id.genreText);
             genreTextView.Text = genre;
+
+            TextView textDate = FindViewById<TextView>(Resource.Id.textDate);
+            textDate.Text = selectedDate;
 
         }
     }
