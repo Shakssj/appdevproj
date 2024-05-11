@@ -6,12 +6,11 @@
 
     <DatePicker
         android:id="@+id/datePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:theme="@style/Animation.AppCompat.Dialog"
-        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="30dp"
+         android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
         />
 
 
@@ -40,11 +39,143 @@
         android:id="@+id/sign_in_button2"
         android:layout_width="350dp"
         android:layout_height="55dp"
-        android:layout_marginTop="730dp"
+        android:layout_marginTop="770dp"
         android:text="Book Now"
         android:textColor="#ffff"
         android:textSize="16sp"
         android:backgroundTint="#CB291C"
         android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard"
+        android:textStyle="bold"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"/>
 
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMAX"
+        android:textStyle="bold"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"/>
+
+    <ImageButton
+        android:id="@+id/timebtn1"
+        android:src="@drawable/ten"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="370dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="25dp"/>
+    <ImageButton
+        android:id="@+id/timebtn2"
+        android:src="@drawable/twelve"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="370dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="160dp"/>
+    <ImageButton
+        android:id="@+id/timebtn3"
+        android:src="@drawable/fifteen"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="370dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="295dp"/>
+
+    <ImageButton
+        android:id="@+id/timebtn4"
+        android:src="@drawable/twenty"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="25dp"/>
+
+    <ImageButton
+        android:id="@+id/timebtn5"
+        android:src="@drawable/twenty"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="160dp"/>
+    <ImageButton
+        android:id="@+id/timebtn6"
+        android:src="@drawable/twentytwo"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="295dp"/>
+
+    <ImageButton
+        android:id="@+id/timebtn7"
+        android:src="@drawable/ten"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="25dp"/>
+    <ImageButton
+        android:id="@+id/timebtn8"
+        android:src="@drawable/twelve"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="160dp"/>
+    <ImageButton
+        android:id="@+id/timebtn9"
+        android:src="@drawable/fifteen"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="295dp"/>
+
+    <ImageButton
+        android:id="@+id/timebtn10"
+        android:src="@drawable/seventen"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="610dp"
+        android:layout_marginLeft="25dp"/>
+    <ImageButton
+        android:id="@+id/timebtn11"
+        android:src="@drawable/twenty"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="610dp"
+        android:layout_marginLeft="160dp"/>
+    <ImageButton
+        android:id="@+id/timebtn12"
+        android:src="@drawable/twentytwo"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#181A20"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="610dp"
+        android:layout_marginLeft="295dp"/>
+    
 </RelativeLayout>

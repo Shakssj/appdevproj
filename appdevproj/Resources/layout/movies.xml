@@ -10,7 +10,8 @@
         android:layout_marginTop="90dp"
         android:layout_marginLeft="250dp"
         android:src="@drawable/movie2"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:backgroundTint="#181A20"/>
     <ImageButton
         android:id="@+id/imgeb"
         android:layout_width="140dp"
