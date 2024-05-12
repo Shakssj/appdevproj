@@ -13,7 +13,7 @@
        android:scaleType="fitCenter"
        android:src="@drawable/hme"
        android:backgroundTint="#181A20"
-       android:layout_marginTop="740dp"
+       android:layout_marginTop="820dp"
        android:layout_marginLeft="10dp"/>
 
     <ImageButton
@@ -23,7 +23,7 @@
        android:scaleType="fitCenter"
        android:src="@drawable/movie"
        android:backgroundTint="#181A20"
-       android:layout_marginTop="740dp"
+       android:layout_marginTop="820dp"
        android:layout_marginLeft="90dp"/>
     <ImageButton
         android:id="@+id/ticketBTN"
@@ -32,7 +32,7 @@
        android:scaleType="fitCenter"
        android:src="@drawable/tickets"
        android:backgroundTint="#181A20"
-       android:layout_marginTop="740dp"
+       android:layout_marginTop="820dp"
         android:layout_marginLeft="170dp"/>
     <ImageButton
         android:id="@+id/srchBTN"
@@ -41,7 +41,7 @@
        android:scaleType="fitCenter"
        android:src="@drawable/searchh"
        android:backgroundTint="#181A20"
-       android:layout_marginTop="740dp"
+       android:layout_marginTop="820dp"
        android:layout_marginLeft="250dp"/>
     <ImageButton
         android:id="@+id/accBTN"
@@ -50,6 +50,6 @@
        android:scaleType="fitCenter"
        android:src="@drawable/acc"
        android:backgroundTint="#181A20"
-       android:layout_marginTop="740dp"
+       android:layout_marginTop="820dp"
         android:layout_marginLeft="330dp"/>
 </RelativeLayout>

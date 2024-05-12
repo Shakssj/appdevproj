@@ -39,7 +39,7 @@
         android:id="@+id/sign_in_button2"
         android:layout_width="350dp"
         android:layout_height="55dp"
-        android:layout_marginTop="770dp"
+        android:layout_marginTop="820dp"
         android:text="Book Now"
         android:textColor="#ffff"
         android:textSize="16sp"

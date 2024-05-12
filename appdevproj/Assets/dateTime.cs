@@ -26,15 +26,6 @@ namespace appdevproj.Assets
 
             datePicker = FindViewById<DatePicker>(Resource.Id.datePicker);
             nextButton = FindViewById<Button>(Resource.Id.sign_in_button2);
-            nextButton.Enabled = false;
-
-            datePicker.DateChanged += (sender, e) =>
-            {
-                nextButton.Enabled = true;
-            };
-
-           
-
             nextButton.Click += (sender, e) =>
             {
                 int day = datePicker.DayOfMonth;
