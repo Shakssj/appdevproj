@@ -25,35 +25,53 @@ namespace appdevproj.Assets
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.movies);
 
-            ImageButton imgeb = FindViewById<ImageButton>(Resource.Id.imgeb);
-            imgeb.Click += delegate
-                {
-                    
-                    Intent intent = new Intent(this, typeof(homedes));
-                    intent.PutExtra("ImageUrl",Resource.Drawable.movie1);
-                    intent.PutExtra("Title", "Madame");
-                    intent.PutExtra("Duration", "160 min");
-                    intent.PutExtra("Director", "nath");
-                    intent.PutExtra("Genre", "Action");
-                    intent.PutExtra("Sypnosis", "asdasdasdasdasdasdasdasdasdas");
-
-                    StartActivity(intent);
-            };
-
-            ImageButton imge2 = FindViewById<ImageButton>(Resource.Id.imge2);
-            imge2.Click += delegate
+            ImageView imgeb1 = FindViewById<ImageView>(Resource.Id.imgeb1);
+            imgeb1.Click += delegate
             {
-                
+
                 Intent intent = new Intent(this, typeof(homedes));
-                intent.PutExtra("ImageUrl", Resource.Drawable.movie2);
-                intent.PutExtra("Title", "Venom");
-                intent.PutExtra("Duration", "120 min");
-                intent.PutExtra("Director", "nsath");
+                intent.PutExtra("ImageUrl", Resource.Drawable.movie1);
+                intent.PutExtra("Title", "Madame");
+                intent.PutExtra("Duration", "160 min");
+                intent.PutExtra("Director", "nath");
                 intent.PutExtra("Genre", "Action");
-                intent.PutExtra("Sypnosis", "Description");
+                intent.PutExtra("Sypnosis", "asdasdasdasdasdasdasdasdasdas");
 
                 StartActivity(intent);
             };
+
+
+            ImageView imgeb2 = FindViewById<ImageView>(Resource.Id.imgeb2);
+            imgeb2.Click += delegate
+            {
+
+                Intent intent = new Intent(this, typeof(homedes));
+                intent.PutExtra("ImageUrl", Resource.Drawable.movie1);
+                intent.PutExtra("Title", "Madame");
+                intent.PutExtra("Duration", "160 min");
+                intent.PutExtra("Director", "nath");
+                intent.PutExtra("Genre", "Action");
+                intent.PutExtra("Sypnosis", "asdasdasdasdasdasdasdasdasdas");
+
+                StartActivity(intent);
+            };
+
+
+            ImageView imgeb3 = FindViewById<ImageView>(Resource.Id.imgeb3);
+            imgeb3.Click += delegate
+            {
+
+                Intent intent = new Intent(this, typeof(homedes));
+                intent.PutExtra("ImageUrl", Resource.Drawable.movie1);
+                intent.PutExtra("Title", "Madame");
+                intent.PutExtra("Duration", "160 min");
+                intent.PutExtra("Director", "nath");
+                intent.PutExtra("Genre", "Action");
+                intent.PutExtra("Sypnosis", "asdasdasdasdasdasdasdasdasdas");
+
+                StartActivity(intent);
+            };
+
 
             ImageButton homeBTN = FindViewById<ImageButton>(Resource.Id.homeBTN);
             homeBTN.Click += delegate
