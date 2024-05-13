@@ -6,6 +6,266 @@
     android:layout_height="match_parent"
     android:background="#181A20">
 
+     <ImageView
+        android:id="@+id/imgev1"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/moviesss"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        />
+
+     <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="none">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+    
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+  
+            <!-- LinearLayout children -->
+      <ImageView
+        android:id="@+id/imgev1"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/movie1"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="IMMACULATE"
+           android:layout_marginTop="220dp"
+           android:layout_marginLeft="30dp"
+           android:textSize="15dp"
+           android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/imgeb1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/Booknow"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/imge1"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/movie3"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="IMAGINARY"
+           android:layout_marginTop="220dp"
+           android:layout_marginLeft="200dp"
+           android:textSize="15dp"
+           android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/imgeb4"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/Booknow"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/imgev2"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="370dp"
+        android:src="@drawable/movie4"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="MADAME WEB"
+           android:layout_marginTop="220dp"
+           android:layout_marginLeft="370dp"
+           android:textSize="15dp"
+           android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/imgeb2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="370dp"
+        android:src="@drawable/Booknow"
+        android:scaleType="fitCenter"/>
+        </RelativeLayout>
+
+
+    </HorizontalScrollView>
+
+<HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+  
+            <!-- LinearLayout children -->
+      <ImageView
+        android:id="@+id/imgev1"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/move1"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Kraven The Hunter"
+           android:layout_marginTop="220dp"
+           android:layout_marginLeft="30dp"
+           android:textSize="15dp"
+           android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/imgeb5"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/Booknow"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/imge1"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/movie2"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Venom The Last Dance"
+           android:layout_marginTop="220dp"
+           android:layout_marginLeft="200dp"
+           android:textSize="15dp"
+           android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/imgeb6"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/Booknow"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/imgev2"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="370dp"
+        android:src="@drawable/move2"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="AQUAMAN"
+           android:layout_marginTop="220dp"
+           android:layout_marginLeft="370dp"
+           android:textSize="15dp"
+           android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/imgeb7"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="370dp"
+        android:src="@drawable/Booknow"
+        android:scaleType="fitCenter"/>
+        </RelativeLayout>
+
+
+    </HorizontalScrollView>
+
+    </RelativeLayout>
+     </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:textColor="#E32F23"
+        android:textSize="15dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginLeft="320dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now Playing"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:textColor="#E32F23"
+        android:textSize="15dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginLeft="320dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coming Soon"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="20dp"/>
+
    <ImageButton
         android:id="@+id/homeBTN"
        android:layout_width="70dp"
