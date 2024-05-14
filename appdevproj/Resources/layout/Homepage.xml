@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     android:background="#181A20">
 
-     <ImageView
-        android:id="@+id/imgev1"
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/moviesss"
-        android:scaleType="fitXY"
-        android:layout_centerHorizontal="true"
-        />
-
      <ScrollView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -122,6 +112,8 @@
         android:layout_marginLeft="370dp"
         android:src="@drawable/Booknow"
         android:scaleType="fitCenter"/>
+
+
         </RelativeLayout>
 
 
@@ -168,7 +160,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="250dp"
         android:layout_marginLeft="30dp"
-        android:src="@drawable/Booknow"
+        android:src="@drawable/watchlist1"
         android:scaleType="fitCenter"/>
 
     <ImageView
@@ -195,7 +187,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="250dp"
         android:layout_marginLeft="200dp"
-        android:src="@drawable/Booknow"
+        android:src="@drawable/watchlist1"
         android:scaleType="fitCenter"/>
 
     <ImageView
@@ -222,17 +214,24 @@
         android:layout_height="50dp"
         android:layout_marginTop="250dp"
         android:layout_marginLeft="370dp"
-        android:src="@drawable/Booknow"
+        android:src="@drawable/watchlist1"
         android:scaleType="fitCenter"/>
         </RelativeLayout>
 
 
     </HorizontalScrollView>
 
-    </RelativeLayout>
-     </ScrollView>
-
-    <TextView
+           <ImageView
+        android:id="@+id/imgev2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/moviesss"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        />
+            <TextView
+                android:id="@+id/btntv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View All"
@@ -266,6 +265,19 @@
         android:layout_marginTop="600dp"
         android:layout_marginLeft="20dp"/>
 
+            <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#181A20"
+        android:layout_marginTop="1000dp"/>
+    </RelativeLayout>
+     </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#181A20"
+        android:layout_marginTop="810dp"/>
    <ImageButton
         android:id="@+id/homeBTN"
        android:layout_width="70dp"
@@ -312,4 +324,5 @@
        android:backgroundTint="#181A20"
        android:layout_marginTop="820dp"
         android:layout_marginLeft="330dp"/>
+
 </RelativeLayout>

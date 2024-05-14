@@ -98,7 +98,14 @@ namespace appdevproj.Assets
 
             };
 
-            
+            TextView btntv1 = FindViewById<TextView>(Resource.Id.btntv1);
+            btntv1.Click += delegate
+            {
+                StartActivity(typeof(movie));
+
+            };
+
+
         }
     }
 }
