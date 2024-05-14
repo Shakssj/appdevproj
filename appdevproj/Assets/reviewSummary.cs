@@ -41,9 +41,13 @@ namespace appdevproj.Assets
             string director = Intent.GetStringExtra("director");
             string genre = Intent.GetStringExtra("genre");
             string selectedDate = Intent.GetStringExtra("selectedDate");
+            string buttonText = Intent.GetStringExtra("ButtonText");
 
             ImageView imageView = FindViewById<ImageView>(Resource.Id.imgev1); // Assuming the ImageView's ID is "imageView"
             imageView.SetImageResource(imageUrl);
+
+            TextView buttonTextView = FindViewById<TextView>(Resource.Id.textTime);
+            buttonTextView.Text = buttonText;
 
             TextView durationTextView = FindViewById<TextView>(Resource.Id.durationText);
             durationTextView.Text = duration;
@@ -73,6 +77,7 @@ namespace appdevproj.Assets
             string director = Intent.GetStringExtra("director");
             string genre = Intent.GetStringExtra("genre");
             string selectedDate = Intent.GetStringExtra("selectedDate");
+            string buttonText = Intent.GetStringExtra("ButtonText");
 
             HashMap movieData = new HashMap();
             movieData.Put("imageUrl", imageUrl);
@@ -81,6 +86,7 @@ namespace appdevproj.Assets
             movieData.Put("director", director);
             movieData.Put("genre", genre);
             movieData.Put("selectedDate", selectedDate);
+            movieData.Put("time", buttonText);
 
             CollectionReference moviesCollectionRef = db.Collection("tickets").Document(auth.CurrentUser.Uid).Collection("movies");
 

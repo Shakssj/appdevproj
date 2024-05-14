@@ -65,117 +65,167 @@
         android:textSize="20dp"
         android:textColor="@android:color/white"/>
 
-    <ImageButton
-        android:id="@+id/timebtn1"
-        android:src="@drawable/ten"
-        android:layout_width="100dp"
+    <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/button10"
+        android:layout_width="86dp"
         android:layout_height="48dp"
         android:layout_marginTop="370dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
-        android:layout_marginLeft="25dp"/>
-    <ImageButton
-        android:id="@+id/timebtn2"
-        android:src="@drawable/twelve"
-        android:layout_width="100dp"
+        android:text="10:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        android:onClick="OnButtonClick"
+        />
+    <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="168dp"
+        android:id="@+id/button12"
+        android:layout_width="86dp"
         android:layout_height="48dp"
         android:layout_marginTop="370dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
-        android:layout_marginLeft="160dp"/>
-    <ImageButton
-        android:id="@+id/timebtn3"
-        android:src="@drawable/fifteen"
-        android:layout_width="100dp"
+        android:text="12:30"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        android:onClick="OnButtonClick"
+        />
+       <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="304dp"
+        android:id="@+id/button15"
+        android:layout_width="86dp"
         android:layout_height="48dp"
         android:layout_marginTop="370dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
-        android:layout_marginLeft="295dp"/>
+        android:text="15:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        android:onClick="OnButtonClick"
+        />
 
-    <ImageButton
-        android:id="@+id/timebtn4"
-        android:src="@drawable/twenty"
-        android:layout_width="100dp"
+    <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/button17"
+        android:layout_width="86dp"
         android:layout_height="48dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
         android:layout_marginTop="430dp"
-        android:layout_marginLeft="25dp"/>
-
-    <ImageButton
-        android:id="@+id/timebtn5"
-        android:src="@drawable/twenty"
-        android:layout_width="100dp"
+        android:text="17:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        />
+        <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="168dp"
+        android:id="@+id/button20"
+        android:layout_width="86dp"
         android:layout_height="48dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
         android:layout_marginTop="430dp"
-        android:layout_marginLeft="160dp"/>
-    <ImageButton
-        android:id="@+id/timebtn6"
-        android:src="@drawable/twentytwo"
-        android:layout_width="100dp"
+        android:text="20:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        />
+    <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="304dp"
+        android:id="@+id/button22"
+        android:layout_width="86dp"
         android:layout_height="48dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
         android:layout_marginTop="430dp"
-        android:layout_marginLeft="295dp"/>
+        android:text="22:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        />
 
-    <ImageButton
-        android:id="@+id/timebtn7"
-        android:src="@drawable/ten"
-        android:layout_width="100dp"
+    <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/btn10"
+        android:layout_width="86dp"
         android:layout_height="48dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
         android:layout_marginTop="550dp"
-        android:layout_marginLeft="25dp"/>
-    <ImageButton
-        android:id="@+id/timebtn8"
-        android:src="@drawable/twelve"
-        android:layout_width="100dp"
+        android:text="10:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        />
+    <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="168dp"
+        android:id="@+id/btn12"
+        android:layout_width="86dp"
         android:layout_height="48dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
         android:layout_marginTop="550dp"
-        android:layout_marginLeft="160dp"/>
-    <ImageButton
-        android:id="@+id/timebtn9"
-        android:src="@drawable/fifteen"
-        android:layout_width="100dp"
+        android:text="12:30"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        />
+       <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="304dp"
+        android:id="@+id/btn15"
+        android:layout_width="86dp"
         android:layout_height="48dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
         android:layout_marginTop="550dp"
-        android:layout_marginLeft="295dp"/>
+        android:text="15:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        />
 
-    <ImageButton
-        android:id="@+id/timebtn10"
-        android:src="@drawable/seventen"
-        android:layout_width="100dp"
+    <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/btn17"
+        android:layout_width="86dp"
         android:layout_height="48dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
         android:layout_marginTop="610dp"
-        android:layout_marginLeft="25dp"/>
-    <ImageButton
-        android:id="@+id/timebtn11"
-        android:src="@drawable/twenty"
-        android:layout_width="100dp"
+        android:text="17:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        />
+        <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="168dp"
+        android:id="@+id/btn20"
+        android:layout_width="86dp"
         android:layout_height="48dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
         android:layout_marginTop="610dp"
-        android:layout_marginLeft="160dp"/>
-    <ImageButton
-        android:id="@+id/timebtn12"
-        android:src="@drawable/twentytwo"
-        android:layout_width="100dp"
+        android:text="20:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        />
+    <Button
+        android:textAllCaps="false"
+        style="@style/RoundedButton"
+        android:layout_marginLeft="304dp"
+        android:id="@+id/btn22"
+        android:layout_width="86dp"
         android:layout_height="48dp"
-        android:backgroundTint="#181A20"
-        android:scaleType="centerCrop"
         android:layout_marginTop="610dp"
-        android:layout_marginLeft="295dp"/>
+        android:text="22:00"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:backgroundTint="#1a1f29"
+        />
     
 </RelativeLayout>
